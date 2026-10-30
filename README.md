@@ -9,11 +9,11 @@ Pomodoro technique timer and task tracker [quickshell](https://quickshell.org/) 
 Pomarchydoro is a fork of [Omodoro](https://github.com/Pnkm0nK/Omodoro) by Pnkm0nK, based on Omodoro 1.2.0. It is maintained separately and has been modified from the original; see the git history for the changes. Both are licensed under the GNU GPL v3.
 
 ## Features
+
 - Create goals for your pomodoro sessions and track progress
 - View your stats
 - Choose between presets or create your own
-- Customizable work/short break/long break intervals 
-- Track your progress with stats
+- Customizable work/short break/long break intervals
 - Enable/disable notifications if you need them
 - Enable/disable sound, with a choice of alert sound for work/break transitions and an optional ticking clock while a session runs
 - A small .json persistence file to preserve the stats, config and tasks
@@ -51,7 +51,9 @@ When the panel is open and focused:
 | `Esc` | Close panel |
 
 ## Omarchy keybind
-If you would like to open the panel using a keyboard shortcut, you can add the following line to `$HOME/.config/hypr/bindings.lua`: 
+
+If you would like to open the panel using a keyboard shortcut, you can add the following line to `$HOME/.config/hypr/bindings.lua`:
+
 ```lua
 o.bind("SUPER + SHIFT + P (Or your preferred keybind)", "Pomarchydoro", "omarchy shell -q shell toggle elaraisav.pomarchydoro")
 ```
@@ -81,9 +83,12 @@ once per session.
 
 ## Contributing
 
-See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md).
+See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). To report a security issue, see the [security policy](docs/SECURITY.md).
+
+## Credits
+
+See [CREDITS.md](CREDITS.md) for the original project and the sound attributions.
 
 ## License
 
 Licensed under the [GNU General Public License v3.0](LICENSE).
-
