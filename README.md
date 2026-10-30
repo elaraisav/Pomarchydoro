@@ -1,10 +1,12 @@
-# Omodoro
+# Pomarchydoro
 
-![Omodoro](preview.png)
+![Pomarchydoro](preview.png)
 
-Pomodoro technique timer and task tracker [quickshell](https://quickshell.org/) plugin for [Omarchy](https://github.com/omarchy)
+Pomodoro technique timer and task tracker [quickshell](https://quickshell.org/) plugin for [Omarchy](https://github.com/omacom/omarchy)
 
-[Plugin page on Omarchy plugin marketplace](https://omarchyplugins.com/plugin.html?id=pnkm0nk.omodoro)
+## About
+
+Pomarchydoro is a fork of [Omodoro](https://github.com/Pnkm0nK/Omodoro) by Pnkm0nK, based on Omodoro 1.2.0. It is maintained separately and has been modified from the original; see the git history for the changes. Both are licensed under the GNU GPL v3.
 
 ## Features
 - Create goals for your pomodoro sessions and track progress
@@ -19,21 +21,22 @@ Pomodoro technique timer and task tracker [quickshell](https://quickshell.org/) 
 ## Install
 
 ```sh
-omarchy plugin add https://github.com/Pnkm0nK/Omodoro --enable
+omarchy plugin add https://github.com/elaraisav/Pomarchydoro --enable
 ```
 
 Move it on the bar using `--section right`, `--section left` or `--section center`:
 
 ```sh
-omarchy bar move pnkm0nk.omodoro --section center
+omarchy bar move elaraisav.pomarchydoro --section center
 ```
 
 ## Remove
 
 ```sh
-omarchy plugin remove pnkm0nk.omodoro
-rm -rf ~/.local/state/omarchy/omodoro.json
+omarchy plugin remove elaraisav.pomarchydoro
+rm -rf ~/.local/state/omarchy/pomarchydoro.json
 ```
+
 ## Shortcuts
 
 When the panel is open and focused:
@@ -50,7 +53,7 @@ When the panel is open and focused:
 ## Omarchy keybind
 If you would like to open the panel using a keyboard shortcut, you can add the following line to `$HOME/.config/hypr/bindings.lua`: 
 ```lua
-o.bind("SUPER + SHIFT + P (Or your preffered keybind)", "Omodoro", "omarchy shell -q shell toggle pnkm0nk.omodoro")
+o.bind("SUPER + SHIFT + P (Or your preferred keybind)", "Pomarchydoro", "omarchy shell -q shell toggle elaraisav.pomarchydoro")
 ```
 
 ## Adjusting sound volume
@@ -61,7 +64,7 @@ quieter or louder, scale it with `ffmpeg`'s `volume` filter, which takes a linea
 (`1.0` = unchanged, `0.5` = half as loud, `2.0` = twice as loud):
 
 ```sh
-cd ~/.config/omarchy/plugins/pnkm0nk.omodoro/sounds
+cd ~/.config/omarchy/plugins/elaraisav.pomarchydoro/sounds
 ffmpeg -i tick.wav -af "volume=0.5" tick-quieter.wav
 mv tick-quieter.wav tick.wav
 ```
@@ -75,4 +78,12 @@ ffmpeg -i tick.wav -af volumedetect -f null - 2>&1 | grep max_volume
 The shipped clips sit around -17 dBFS peak (roughly 20% of full scale) — well below the
 desktop alert sounds' -3 to -10 dBFS, since a tick plays every second while an alert plays
 once per session.
+
+## Contributing
+
+See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md).
+
+## License
+
+Licensed under the [GNU General Public License v3.0](LICENSE).
 
