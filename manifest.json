@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "pnkm0nk.omodoro",
-  "name": "Omodoro",
-  "version": "1.2.0",
-  "author": "pnkm0nk",
+  "id": "elaraisav.pomarchydoro",
+  "name": "Pomarchydoro",
+  "version": "1.0.0",
+  "author": "elaraisav",
   "description": "Pomodoro technique timer panel with task tracking, keybindings, configuration and notifications",
   "kinds": [
     "bar-widget",
@@ -14,7 +14,7 @@
     "service": "Service.qml"
   },
   "barWidget": {
-    "displayName": "Omodoro",
+    "displayName": "Pomarchydoro",
     "description": "Pomodoro technique timer with task tracking, config and keybinds",
     "category": "Productivity",
     "allowMultiple": false

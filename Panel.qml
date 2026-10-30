@@ -6,15 +6,15 @@ import qs.Ui
 
 Panel {
   id: root
-  moduleName: "pnkm0nk.omodoro"
-  ipcTarget: "pnkm0nk.omodoro"
+  moduleName: "elaraisav.pomarchydoro"
+  ipcTarget: "elaraisav.pomarchydoro"
   manageIpc: false
 
   property var anchorItem: null
   property var hostWidget: null
   readonly property var barIdentity: hostWidget || root
   readonly property var service: root.bar && root.bar.shell
-    ? root.bar.shell.serviceFor("pnkm0nk.omodoro") : null
+    ? root.bar.shell.serviceFor("elaraisav.pomarchydoro") : null
 
   function open() { root.controller.show() }
   function openFromHotkey() { root.controller.show() }
@@ -107,7 +107,7 @@ Panel {
             }
 
             Text {
-              text: "Omodoro"
+              text: "Pomarchydoro"
               color: root.bar ? root.bar.foreground : Color.foreground
               font.family: root.bar ? root.bar.fontFamily : Style.font.family
               font.pixelSize: Style.font.heading
