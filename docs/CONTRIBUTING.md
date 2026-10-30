@@ -76,7 +76,7 @@ If the title fully explains the change, that is enough. Otherwise add a short bo
 
 - Target `main` and keep the pull request focused on one change.
 - Describe what changed and why. Link a related issue if there is one.
-- Say how you tested it.
+- For code changes, say how you tested it.
 - For UI changes, attach a screenshot to the pull request itself. Do not commit screenshots to the repository.
 
 ## AI-assisted contributions
