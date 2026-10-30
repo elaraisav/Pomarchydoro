@@ -26,7 +26,7 @@ Thanks for your interest in contributing. Pomarchydoro is a Pomodoro timer and t
 
 ## Protected `main`
 
-`main` is protected: changes go through pull requests and are not pushed directly. Automated checks run on pull requests and must pass.
+`main` is protected: changes go through pull requests and are not pushed directly. Automated checks (such as code scanning) run on pull requests.
 
 Please don't change files under `.github/` without discussing it in an issue first.
 
