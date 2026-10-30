@@ -16,7 +16,7 @@ Thanks for your interest in contributing. Pomarchydoro is a Pomodoro timer and t
    ```bash
    git fetch upstream
    ```
-3. Create a branch, ideally from an up-to-date `main`, named as described in [Branch naming](#branch-naming).
+3. Check the existing issues and pull requests so you don't duplicate work. Then create a branch, ideally from an up-to-date `main`, named as described in [Branch naming](#branch-naming).
 4. Make your change in small, focused commits ([Commit messages](#commit-messages)).
 5. Push the branch to your fork:
    ```bash
