@@ -85,15 +85,17 @@ Using AI tools is fine. What matters is that the code follows good practice and 
 
 ## Testing a change
 
-There is no automated test suite. Check your plugin against Omarchy's rules with:
+There is no automated test suite. Before opening a pull request:
 
-```bash
-omarchy plugin validate .
-```
+- Check the plugin against Omarchy's rules:
+  ```bash
+  omarchy plugin validate .
+  ```
+- Run your change in Omarchy and try the affected feature.
 
-<!-- TODO: add steps for running a local working copy once verified -->
+Omarchy reloads a plugin when you save a file in its folder under `~/.config/omarchy/plugins/`. If you keep your clone elsewhere and symlink it into that folder, Omarchy doesn't watch it, so reload the shell yourself after each change.
 
-See the [Omarchy shell plugins manual](https://omarchy.org/manual/shell-plugins/).
+See the [Omarchy shell plugins manual](https://omarchy.org/manual/shell-plugins/). Use whatever setup works for you.
 
 ## Licensing
 
@@ -103,4 +105,6 @@ Contributions are licensed under [GPL-3.0](../LICENSE). Do not remove the existi
 
 Open a GitHub issue with steps to reproduce and your Omarchy version.
 
-<!-- TODO: add a Security section once private vulnerability reporting is enabled -->
+## Security issues
+
+Please don't report vulnerabilities in public issues. See the [security policy](SECURITY.md).
