@@ -20,7 +20,7 @@ Item {
     property bool showSecondsInBar: false
     property string selectedPreset: "classic"
 
-    readonly property string pluginDir: Quickshell.env("HOME") + "/.config/omarchy/plugins/pnkm0nk.omodoro"
+    readonly property string pluginDir: Quickshell.env("HOME") + "/.config/omarchy/plugins/elaraisav.pomarchydoro"
 
     readonly property var soundOptions: [
         { id: "bell",      label: "Bell",       path: "/usr/share/sounds/freedesktop/stereo/bell.oga" },
@@ -109,7 +109,7 @@ Item {
     property string lastActiveDate: ""
 
     // path for persistent state storage
-    property string statePath: Quickshell.env("HOME") + "/.local/state/omarchy/omodoro.json"
+    property string statePath: Quickshell.env("HOME") + "/.local/state/omarchy/pomarchydoro.json"
 
     FileView {
     id: stateFile
@@ -174,7 +174,7 @@ Item {
         }
         }
     } catch (e) {
-        console.warn("Omodoro: failed to parse state JSON", e)
+        console.warn("Pomarchydoro: failed to parse state JSON", e)
     }
     }
 
@@ -319,7 +319,7 @@ Item {
     if (!notificationsEnabled) return
     Quickshell.execDetached([
         "notify-send",
-        "-a", "Omodoro",
+        "-a", "Pomarchydoro",
         "-i", "alarm-symbolic",
         "-u", "normal",
         title,

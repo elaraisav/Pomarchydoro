@@ -4,10 +4,10 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "pnkm0nk.omodoro"
+  moduleName: "elaraisav.pomarchydoro"
 
   readonly property var service: root.bar && root.bar.shell
-    ? root.bar.shell.serviceFor("pnkm0nk.omodoro") : null
+    ? root.bar.shell.serviceFor("elaraisav.pomarchydoro") : null
 
   readonly property bool showingSeconds: root.service && root.service.timerRunning && root.service.showSecondsInBar
   readonly property Item activeWidget: showingSeconds ? secondsButton : iconButton
@@ -90,7 +90,7 @@ BarWidget {
     text: root.service ? root.service.label : ""
     foreground: root.getIconForegroundColor()
     slotSize: Style.bar.statusSlot
-    tooltipText: "Omodoro"
+    tooltipText: "Pomarchydoro"
 
     onPressed: function(b) {
       if (!root.bar) return
@@ -110,7 +110,7 @@ BarWidget {
     labelVisible: false
     hasVisualContent: text !== ""
     horizontalMargin: 4
-    tooltipText: "Omodoro"
+    tooltipText: "Pomarchydoro"
 
     onPressed: function(b) {
       if (!root.bar) return
