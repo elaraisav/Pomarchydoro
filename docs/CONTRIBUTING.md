@@ -8,7 +8,11 @@ Thanks for your interest in contributing. Pomarchydoro is a Pomodoro timer and t
    ```bash
    gh repo fork elaraisav/Pomarchydoro --clone
    ```
-2. To keep your fork up to date, make sure your clone has a remote pointing at this repository (`gh` adds it as `upstream`), and fetch from it before starting a new branch:
+2. To keep your fork up to date, fetch from the `upstream` remote before starting a new branch. `gh` adds this remote for you; if `git remote -v` doesn't list it, add it:
+   ```bash
+   git remote add upstream https://github.com/elaraisav/Pomarchydoro.git
+   ```
+   Then fetch:
    ```bash
    git fetch upstream
    ```
@@ -22,7 +26,7 @@ Thanks for your interest in contributing. Pomarchydoro is a Pomodoro timer and t
    ```bash
    gh pr create
    ```
-7. The change is reviewed and merged by the maintainer. A change that works, follows these guidelines and fits the project's goals will most likely be merged without fuss. If something needs adjusting, you'll be asked.
+7. The change is reviewed and merged by the maintainer. A change that works, follows these guidelines and fits the project's goals will most likely be merged without fuss. If something needs adjusting, you'll be asked to change it.
 
 ## Protected `main`
 
@@ -93,7 +97,7 @@ There is no automated test suite. Before opening a pull request:
   ```
 - Run your change in Omarchy and try the affected feature.
 
-Omarchy reloads a plugin when you save a file in its folder under `~/.config/omarchy/plugins/`. If you keep your clone elsewhere and symlink it into that folder, Omarchy doesn't watch it, so reload the shell yourself after each change.
+Omarchy reloads a plugin when you save a file in its folder under `~/.config/omarchy/plugins/`. If you keep your clone elsewhere and symlink it into that folder, Omarchy doesn't watch it, so reload the Omarchy shell yourself after each change.
 
 See the [Omarchy shell plugins manual](https://omarchy.org/manual/shell-plugins/). Use whatever setup works for you.
 
