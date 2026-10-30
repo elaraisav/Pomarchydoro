@@ -26,7 +26,7 @@ Thanks for your interest in contributing. Pomarchydoro is a Pomodoro timer and t
    ```bash
    gh pr create
    ```
-7. The change is reviewed and merged by the maintainer. A change that works, follows these guidelines and fits the project's goals will most likely be merged without fuss. If something needs adjusting, you'll be asked to change it.
+7. The change is reviewed and merged by the maintainer, with a merge commit that keeps all your commits. A change that works, follows these guidelines and fits the project's goals will most likely be merged without fuss. If something needs adjusting, you'll be asked to change it.
 
 ## Protected `main`
 
