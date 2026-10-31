@@ -104,3 +104,5 @@ See [CREDITS.md](CREDITS.md) for the original project and the sound attributions
 ## License
 
 Licensed under the [GNU General Public License v3.0](LICENSE).
+
+The modifications in this fork may contain mistakes. If you find one, please [open an issue](https://github.com/elaraisav/Pomarchydoro/issues/new). Bugs in the original code are best reported to [Omodoro](https://github.com/Pnkm0nK/Omodoro).
