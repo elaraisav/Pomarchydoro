@@ -8,6 +8,18 @@ Pomodoro technique timer and task tracker [quickshell](https://quickshell.org/) 
 
 Pomarchydoro is a fork of [Omodoro](https://github.com/Pnkm0nK/Omodoro) by Pnkm0nK, based on Omodoro 1.2.0. It is maintained separately and has been modified from the original by elaraisav, starting 2026-10-30 (first fork commit); see the git history for the changes. Both are licensed under the GNU GPL v3.
 
+## Why a fork
+
+I really appreciated the simplicity of the plugin that Pnkm0nk made, and there are a few features that I want to implement on top of it.
+
+I made this a standalone fork instead of contributing upstream because I am unsure if the original author would agree with the changes I want to make. Also, I want to learn more about what it means to maintain a plugin, and I believe it's best to start with a solid base rather than reinvent the wheel.
+
+If you prefer the features provided in the original plugin, please go and use it instead.
+
+My version of the plugin will add new features on top of the existing plugin and possibly remove some that become redundant. I also implemented my own preferences for contributions to this project that apply to me and anyone else who wants to contribute (see [Contributing](#contributing)). I plan on actively maintaining the project for the foreseeable future.
+
+I keep the project as a fork for now because I might pull important changes from upstream and merge them if required, with the correct attribution.
+
 ## Features
 
 - Create goals for your pomodoro sessions and track progress
