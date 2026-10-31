@@ -16,7 +16,7 @@ Thanks for your interest in contributing. Pomarchydoro is a Pomodoro timer and t
    ```bash
    git fetch upstream
    ```
-3. Check the existing issues and pull requests so you don't duplicate work. Then create a branch, ideally from an up-to-date `main`, named as described in [Branch naming](#branch-naming).
+3. Check the open and closed issues and pull requests so you don't duplicate work or suggest something that was already discussed or closed. For a new feature, opening an issue is advised (see [Feature ideas](#feature-ideas)). Then create a branch, ideally from an up-to-date `main`, named as described in [Branch naming](#branch-naming).
 4. Make your change in small, focused commits ([Commit messages](#commit-messages)).
 5. Push the branch to your fork:
    ```bash
@@ -79,7 +79,7 @@ If the title fully explains the change, that is enough. Otherwise add a short bo
 ## Pull requests
 
 - Target `main` and keep the pull request focused on one change.
-- Describe what changed and why. Link a related issue if there is one.
+- Describe what changed and why. Link the related issue with `Closes #N`, so it closes when the pull request is merged.
 - For code changes, say how you tested it.
 - For UI changes, attach a screenshot to the pull request itself. Do not commit screenshots to the repository.
 
@@ -107,7 +107,24 @@ Contributions are licensed under [GPL-3.0](../LICENSE). Do not remove the existi
 
 ## Bugs
 
-Open a GitHub issue with steps to reproduce and your Omarchy version.
+Bugs are fixed on the latest `main`. Reports about older versions usually won't be fixed, so check that the bug still happens on the latest `main` before you report it.
+
+Open a GitHub issue and include:
+
+- What you expected and what happened instead.
+- Steps to reproduce.
+- Your Omarchy version (`pacman -Q omarchy`) and Quickshell version (`quickshell --version`).
+- The plugin version (in `manifest.json`) or commit.
+- Any error output or a screenshot, if you have one.
+- Any change you made to the plugin yourself, other than what the plugin does on its own. Using the plugin's own settings, such as a button that changes a setting, counts as normal use. Editing the code or files by hand does not, and a bug caused by such a change may be closed as invalid.
+
+## Feature ideas
+
+Opening an issue for a feature idea is advised. Issues are the public record of what was suggested: before suggesting a change, check the open and closed issues to see whether it was already suggested, and what came of it.
+
+To suggest a feature, open an issue with a short title and a description of what you want and why. You can also work on it and open a pull request right away. A change that doesn't fit the project's goals may not be accepted.
+
+The maintainer labels issues with GitHub's default labels, as provided (`bug`, `enhancement`, `documentation`, `question` and so on).
 
 ## Security issues
 
