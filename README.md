@@ -6,7 +6,7 @@ Pomodoro technique timer and task tracker [quickshell](https://quickshell.org/) 
 
 ## About
 
-Pomarchydoro is a fork of [Omodoro](https://github.com/Pnkm0nK/Omodoro) by Pnkm0nK, based on Omodoro 1.2.0. It is maintained separately and has been modified from the original; see the git history for the changes. Both are licensed under the GNU GPL v3.
+Pomarchydoro is a fork of [Omodoro](https://github.com/Pnkm0nK/Omodoro) by Pnkm0nK, based on Omodoro 1.2.0. It is maintained separately and has been modified from the original by elaraisav, starting 2026-10-30 (first fork commit); see the git history for the changes. Both are licensed under the GNU GPL v3.
 
 ## Features
 
