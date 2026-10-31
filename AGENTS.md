@@ -14,7 +14,7 @@ Pomarchydoro is a Pomodoro timer and task tracker plugin for Omarchy, written in
 ## Rules
 
 - Follow `docs/CONTRIBUTING.md`: work on a prefixed branch and use Conventional Commits. Never push directly to `main`; changes go through pull requests.
-- Before starting work, or opening an issue or pull request, check the existing issues and pull requests to avoid duplicating them.
+- Before starting work, or opening an issue or pull request, check the open and closed issues and pull requests to avoid duplicating them or repeating a suggestion that was already closed. Link the related issue in the pull request with `Closes #N`.
 - The plugin ID (`elaraisav.pomarchydoro`) appears in `manifest.json`, the three QML files and the README. Keep them in sync, and don't rename the ID or the state file unless asked, because that breaks installs and saved data.
 - Keep `LICENSE`, the README attribution and `CREDITS.md` intact.
 - There is no formatter, so match the style of the surrounding code.
